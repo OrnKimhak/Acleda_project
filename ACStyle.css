@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9fafc;
+    color: #333;
+}
+.logo img{
+    width: 250px;
+}
+header {
+    background: #1B3351;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+.sidebar {
+    flex: 1;
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* margin: auto; */
+}
+.sidebar .btn {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    background: #1B3351;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+.button-group {
+    margin-bottom: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center; /* Center the buttons horizontally */
+}
+
+.button-group .btn {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button-group .btn#ios-btn {
+    background: linear-gradient(45deg, #007aff, #0056b3);
+}
+
+.button-group .btn#android-btn {
+    background: linear-gradient(45deg, #34a853, #00701a);
+}
+
+.button-group .btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.button-group .btn:active {
+    transform: scale(1);
+    box-shadow: none;
+    opacity: 0.9;
+}
+.sidebar .btn:hover {
+    background: #004a98;
+    transform: scale(1.05);
+}
+.content {
+    flex: 3;
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.hidden {
+    display: none;
+}

@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'FiraSans';
+    src: url('../fonts/FiraSans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Krasar';
+    src: url('../fonts/Krasar.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body{margin:0 auto; padding:0; background-color:#fff; color:#1B3351;}
+.body-eng{font:100% FiraSans; line-height:160%;}
+.body-khm{font:95% Krasar; line-height:160%;}
+a{color:#06C; text-decoration:none;}
+a:hover{color:#1B3351;}
+
+.top{height:90px; width:100%; top:0; z-index:10; position:fixed; background-color:#1B3351; text-align:center;}
+.top a.language{color:#ccc; position:absolute; left:60px; top:13px; padding:22px 0;}
+.top a.language img{width:19px; padding:1px; border:1px solid #999; vertical-align:middle; margin:0 5px 3px 0;}
+.top a:hover.language img{border:1px solid #fff;}
+.top a:hover.language{color:#fff;}
+.top .logo{width:180px; padding:23px 0 0; border:none;}
+.shadow{background:url(../images/nav-shadow.png) repeat-x top; height:7px; top:90px; z-index:2; width:100%; position:fixed;}
+
+.content{background:#fff; padding:50px 0; margin:90px auto 0; position:relative; max-width:800px;}
+h1{padding:0 20px 30px; margin:0; font-weight:normal; color:#c29a39; font-size:160%; line-height:150%;}
+.background-gray{background-color:#e9ecef;}
+.border-bottom-gray{border-bottom:1px solid #e9ecef;}
+.border-top-gray{border-top:1px solid #e9ecef;}
+.border-gray{border:1px solid #e9ecef;}
+ul.list{margin:0; padding:0; list-style:none;}
+ul.list ul{margin:0; padding:0; list-style:none;}
+ul.list li a{border-top:1px solid #eee; padding:20px; display:block;}
+.color-gray{color:#888;}
+.contact{padding:40px 20px; margin:0 auto; font-size:90%; max-width:760px; line-height:170%; color:#fff;}
+.contact div{border-bottom:1px solid #666; padding-bottom:10px; margin-bottom:10px;}
+.contact img{width:20px; vertical-align:middle; padding-right:10px; padding-bottom:3px;}
+.contact a{color:#fff;}
+
+@media (prefers-color-scheme: dark){
+body{background-color:#091521; color:#eee;}
+.shadow{display:none;}
+.content{background:#091521;}
+.background-gray{background-color:#1b2232;}
+.border-bottom-gray{border-bottom:1px solid #444;}
+.border-top-gray{border-top:1px solid #444;}
+.border-gray{border:1px solid #444;}
+ul.list li a{border-top:1px solid #333;}
+a{color:#A9CBF1;}
+a:hover{color:#fff;}
+input[type=text]{color:#eee !important; background-color:#091521 !important;}
+}
